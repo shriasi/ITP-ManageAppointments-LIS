@@ -1,0 +1,124 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/report.css' %}"/>
+    <title>Report</title>
+</head>
+<body>
+
+<hr>
+   <div class="letterhead">
+       <div class="logo">
+          <img src="{% static '/images/logo.jpg'%}" alt="..." class="rounded-circle">
+       </div>
+       <div class="details">
+           Sumudu Prabha Atapattu <br>
+           LL.B(Sri Lanka), Attorney-at-Law <br>
+           Notary Public, Commissioner for Oaths <br>
+           & Registered Company Secretary
+       </div>
+   </div>
+
+<hr>
+
+   <div class="apppointbody" id="printableArea">
+         
+        <div class="bodyhead" style="text-align: center;">
+            <h4>Appointment Summary</h4> <p>Referal Number : {{ appointment.id }} <!--render appoint ID --></p>
+        </div>
+
+
+        <div class="content">
+           <div class="part1 d-flex">
+               <div>
+                   <p>Appointment Number : </p>
+               </div>
+                <div style="margin-left:190px; text-decoration:underline;">
+                   {{ appointment.Appoint_ID }}
+               </div>
+           </div>
+
+            <div class="part1 d-flex">
+                <div>
+                    <p>Appointment Holder : </p>
+                </div>
+                  <div style="margin-left:200px; text-decoration:underline;">
+                   {{ appointment.Ap_Cus_name }}
+                </div>
+            </div>
+
+
+            <div class="part2 d-flex">
+                <div>
+                    <p>Address : </p>
+                </div>
+                 <div style="margin-left:280px; text-decoration:underline;">
+                    {{ appointment.Ap_Cus_address }}
+                </div>
+            </div>
+
+            <div class="part3 d-flex">
+                <div>
+                    <p>Email : </p>
+                </div>
+                   <div style="margin-left:290px; text-decoration:underline;">
+                    {{ appointment.Ap_Cus_email }}
+                </div>
+            </div>
+
+            <div class="part4 d-flex">
+                <div>
+                    <p>Purpose : </p>
+                </div>
+                 <div style="margin-left:280px; text-decoration:underline;">
+                     {{ appointment.Ap_Purpose }}
+                </div>
+            </div>
+
+            <div class="part4 d-flex">
+                <div>
+                    <p>Date and Time: </p>
+                </div>
+                 <div style="margin-left:240px; text-decoration:underline;">
+                     {{ appointment.Ap_Date_time }}
+                </div>
+            </div>
+
+            <div class="part4 d-flex">
+                <div>
+                    <p>Special Notes: </p>
+                </div>
+                <div style="margin-left:250px; text-decoration:underline;">
+                    {{ appointment.Ap_Notes }}
+                </div>
+            </div>
+
+            <div class="part4 d-flex">
+                <div>
+                    <p>Venue: </p>
+                </div>
+                 <div style="margin-left:300px; text-decoration:underline;">
+                    {{ appointment.Ap_Venue }}
+                </div>
+            </div>
+
+    <div class="btnon">  
+        <button onclick="window.print()" id="printit" class="btn btn-primary">Print this page</button>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

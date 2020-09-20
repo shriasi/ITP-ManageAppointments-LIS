@@ -1,0 +1,29 @@
+@media print { 
+    #printit  {
+        display: none !important;
+      } 
+ }
+
+.letterhead{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.content{
+
+    margin-left: 400px;
+    font-family: "Times New Roman";
+
+}
+.P{
+
+    font-size: medium;
+}
+
+.btnon{
+
+    margin-left: 150px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
