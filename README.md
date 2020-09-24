@@ -1,4 +1,4 @@
-# ITP-ManageAppointments-LEGAL INFORMATION SYSTEM
+# ITP-Manage Appointments-LEGAL INFORMATION SYSTEM
 
  
  Insert data or information about new Appointments in to the  system.
