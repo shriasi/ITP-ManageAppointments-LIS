@@ -1,4 +1,4 @@
-# ITP-Manage Appointments-LEGAL INFORMATION SYSTEM
+# ITP-Manage Appointments-Legal Information System
 
  
  Insert data or information about new Appointments in to the  system.
@@ -18,3 +18,26 @@ some visual representations.
 															                                           
 
 
+Commands
+ 
+ 		 Virtual Environments			python -m venv env
+		
+		
+		 Activate Virtual Environment           env\Scripts\activate
+		 
+		 
+		 Install django 			pip install django
+		 
+		 
+		 Startproject				django-admin startproject proname
+		 
+		 
+		 Runserver                              python manage.py runserver
+		 
+		 
+		 conect databse				pip install mysqlclient
+		 
+		 					python manage.py makemigrations
+		 					
+							python manage.py migrate
+		
