@@ -34,6 +34,16 @@ Commands
 		 
 		 Runserver                              python manage.py runserver
 		 
+
+Appointment Dashboard Upper part
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/dashboard1.png)
+
+Appointment Dashboard Latter Part
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/datalist.png)
+
+
+
+![alt text](http://url/to/img.png)
 		 
 		 conect databse				pip install mysqlclient
 		 
