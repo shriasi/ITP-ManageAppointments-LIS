@@ -127,6 +127,7 @@
                 <div class="jumbotron jumbotron-fluid jumb1">
                     <div class="container">
                         <h1 class="display-10">Enter Appointment Details</h1>
+                                  <h2>{{ html }}</h2>
                              <form method="POST" action="/appform" class="post-form" name="myform" >  
                                       {% csrf_token %}
                                 <!--Appointment Id form element-->
@@ -137,7 +138,7 @@
                                        <p style="margin-left: 20px ;">ID </p>
                                       </div>
                                     <div class="col-lg-12" style="margin-left: 80px;">
-                                     {{ form.Appoint_ID }} 
+                                     {{ form.Appoint_ID }}
                                     </div>
                                 </div>
                                 <!-- Name-->
@@ -281,6 +282,7 @@
             }
         }
     </script>
+
      /* email validation */
         function ValidateEmail(){
         var email = document.getElementById("id_Ap_Cus_email");

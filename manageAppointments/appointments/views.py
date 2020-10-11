@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect  
 from appointments.forms import AppointForm  
-from appointments.models import Appointments  
+from appointments.models import Appointments
+from . import forms
+from django.core.mail import send_mail
+
 
 #function request form
 def appform(request):  
@@ -52,6 +55,20 @@ def fullreport(request , id):
      return render(request,'report.html',{'appointment':appointment})
 
 #function to analyse full records
-def fullrecords(request,):
+def fullrecords(request, id):
     appointments = Appointments.objects.all()  
-    return render(request,'fullrecords.html',{'appointments':appointments}) 
+    return render(request,'fullrecords.html',{'appointments':appointments})
+    
+#function to send emails
+def sendmail(request, id):
+    appointment = Appointments.objects.get(id=id)
+    #send email
+    send_mail(
+    'About the appointment',
+    'Dear Sir/Madam,Here is the summary of your appointment.  Venue' + appointment.Ap_Venue + 'Purpose' + appointment.Ap_Purpose + 'Extra Notes' + appointment.Ap_Notes,
+    'shashibandarass@gmail.com',
+    [appointment.Ap_Cus_email],
+    fail_silently=False,
+    )
+    return render(request,'fullrecords.html')
+    

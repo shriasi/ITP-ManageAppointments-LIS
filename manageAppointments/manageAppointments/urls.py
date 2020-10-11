@@ -11,5 +11,6 @@ urlpatterns = [
     path('delete/<int:id>', views.destroy), 
     path('calender', views.calender, name="calender") ,
     path('fullreport/<int:id>' , views.fullreport , name = "fullreport"),
-    path('fullrecords' , views.fullrecords , name="fullrecords")
+    path('sendmail/<int:id>' , views.sendmail , name = "sendmail"),
+    path('fullrecords' , views.fullrecords , name="fullrecords"),
 ]  

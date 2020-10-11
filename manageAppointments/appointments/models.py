@@ -10,4 +10,3 @@ class Appointments(models.Model):
     Ap_Venue = models.CharField(max_length=200)
     class Meta:  
         db_table = "App_details" 
-
