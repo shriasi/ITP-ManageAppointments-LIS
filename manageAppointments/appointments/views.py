@@ -55,7 +55,7 @@ def fullreport(request , id):
      return render(request,'report.html',{'appointment':appointment})
 
 #function to analyse full records
-def fullrecords(request, id):
+def fullrecords(request):
     appointments = Appointments.objects.all()  
     return render(request,'fullrecords.html',{'appointments':appointments})
     
@@ -65,10 +65,13 @@ def sendmail(request, id):
     #send email
     send_mail(
     'About the appointment',
-    'Dear Sir/Madam,Here is the summary of your appointment.  Venue' + appointment.Ap_Venue + 'Purpose' + appointment.Ap_Purpose + 'Extra Notes' + appointment.Ap_Notes,
+    'Dear Sir/Madam,Here is the summary of your appointment.'+
+    'Venue ' +  appointment.Ap_Venue +
+    'Purpose ' + appointment.Ap_Purpose + 
+    'Extra Notes ' + appointment.Ap_Notes,
     'shashibandarass@gmail.com',
     [appointment.Ap_Cus_email],
     fail_silently=False,
     )
-    return render(request,'fullrecords.html')
+    return render(request,'report.html',{'appointment':appointment})
     

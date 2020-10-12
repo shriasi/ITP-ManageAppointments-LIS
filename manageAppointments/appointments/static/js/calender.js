@@ -287,19 +287,19 @@
         }
         
         
-        function destroy() {
+        // function destroy() {
     
-            if (currentView) {
-                trigger('viewDestroy', currentView, currentView, currentView.element);
-                currentView.triggerEventDestroy();
-            }
+        //     if (currentView) {
+        //         trigger('viewDestroy', currentView, currentView, currentView.element);
+        //         currentView.triggerEventDestroy();
+        //     }
     
-            $(window).unbind('resize', windowResize);
+        //     $(window).unbind('resize', windowResize);
     
-            header.destroy();
-            content.remove();
-            element.removeClass('fc fc-rtl ui-widget');
-        }
+        //     header.destroy();
+        //     content.remove();
+        //     element.removeClass('fc fc-rtl ui-widget');
+        // }
         
         
         function elementVisible() {
@@ -4788,30 +4788,7 @@
             }
         }
     
-    
-    
-        // ====================================================================================================
-        // Utilities for day "cells"
-        // ====================================================================================================
-        // The "basic" views are completely made up of day cells.
-        // The "agenda" views have day cells at the top "all day" slot.
-        // This was the obvious common place to put these utilities, but they should be abstracted out into
-        // a more meaningful class (like DayEventRenderer).
-        // ====================================================================================================
-    
-    
-        // For determining how a given "cell" translates into a "date":
-        //
-        // 1. Convert the "cell" (row and column) into a "cell offset" (the # of the cell, cronologically from the first).
-        //    Keep in mind that column indices are inverted with isRTL. This is taken into account.
-        //
-        // 2. Convert the "cell offset" to a "day offset" (the # of days since the first visible day in the view).
-        //
-        // 3. Convert the "day offset" into a "date" (a JavaScript Date object).
-        //
-        // The reverse transformation happens when transforming a date into a cell.
-    
-    
+
         // exports
         t.isHiddenDay = isHiddenDay;
         t.skipHiddenDays = skipHiddenDays;

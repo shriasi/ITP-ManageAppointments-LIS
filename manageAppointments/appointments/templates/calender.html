@@ -18,11 +18,7 @@
 		var d = date.getDate();
 		var m = date.getMonth();
 		var y = date.getFullYear();
-<<<<<<< HEAD
 	
-=======
-		
->>>>>>> refs/remotes/origin/master
 		$('#external-events div.external-event').each(function() {
 	
 			var eventObject = {
@@ -145,18 +141,15 @@
 					end: new Date(y, m, d+1, 22, 30),
 					allDay: false,
 				},
-				{
-					title: 'Click for Google',
-					start: new Date(y, m, 28),
-					end: new Date(y, m, 28),
-					url: 'https://www.google.com/',
-					className: 'success'
-				}
+				
 			],			
 		});
 		
 		
 	});
+
+//convert into JSON file
+ var ebemtObject = JSON.parse('{ "title": "Click for Google", "start": "new Date(y, m, 28)", "end": "new Date(y, m, 28)", "url": "https://www.google.com/", "className": "success" }');
 
 </script>
 <style>

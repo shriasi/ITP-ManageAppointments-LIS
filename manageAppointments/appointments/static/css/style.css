@@ -3896,7 +3896,7 @@ input[type=button].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  background: lightblue;
+  background: #007bff;
   margin-left: 20px;
   margin-right: 10px;
 }
@@ -10184,7 +10184,7 @@ body {
   color: #007bff;
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active {
-  color: #007bff;
+  color: black;
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
   color: #007bff;
@@ -10199,4 +10199,8 @@ body {
 .pro{
 
   float: right;
+}
+.prosec{
+
+  margin-left:200%;
 }
