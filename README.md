@@ -34,20 +34,41 @@ Commands
 		 
 		 Runserver                              python manage.py runserver
 		 
-
-Appointment Dashboard Upper part
-![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/dashboard1.png)
-
-Appointment Dashboard Latter Part
-![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/datalist.png)
-
-
-
-![alt text](http://url/to/img.png)
 		 
-		 conect databse				pip install mysqlclient
+		 connect databse			pip install mysqlclient
 		 
 		 					python manage.py makemigrations
 		 					
 							python manage.py migrate
+
+How to run this Django App?
+
+Steps!
+		1)Clone this to your laptop
+		2)Make Sure you have installed mysql in your pc and mysql is running
+		3)Activate virtual environment
+		4)Run the command for runserver
+		5)open the address in a browser (127.0.0.1)
+	
+							
+							
+	
+	Appointment Dashboard Upper part
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/dashboard1.png)
+
+
+	Appointment Dashboard Latter Part
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/datalist.png)
+
+
+	Appointment List
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/datalist.png)
+
+
+	Appointment Calender
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/calender.png)
+
+
+	Appointment Report printable as PDF
+![alt text](https://github.com/shriasi/ITP-ManageAppointments-LIS/blob/master/images/Report.png)
 		
