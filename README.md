@@ -1,4 +1,5 @@
-# ITP-Manage Appointments-Legal Information System
+#Django + python 
+#ITP-Manage Appointments-Legal Information System
 
  
  Insert data or information about new Appointments in to the  system.
